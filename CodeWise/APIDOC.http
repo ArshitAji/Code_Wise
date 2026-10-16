@@ -1,0 +1,42 @@
+###
+GET http://127.0.0.1:8000/questions/
+Accept:application/json
+
+###
+POST http://127.0.0.1:8000/questions/
+Content-Type:application/json
+
+{
+    "title":"prime of a number",
+    "language":"python",
+    "difficulty_level":"easy",
+    "topic":"loop",
+    "is_active":true,
+    "sample_input":"5",
+    "sample_output":120
+
+    
+
+}
+
+###
+GET http://127.0.0.1:8000/questions/3
+ACCEPT:application/json
+
+
+###
+PUT http://127.0.0.1:8000/questions/3
+Content-Type:application/json
+
+{
+    "title":"Armstrong Number",
+    "language":"python",
+    "difficulty_level":"easy",
+    "topic":"While Loop",
+    "is_active":true,
+    "sample_input":"153",
+    "sample_output":"Armstrong Number"
+}
+
+###
+DELETE http://127.0.0.1:8000/questions/4
